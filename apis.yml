@@ -1,8 +1,27 @@
 aid: infiot
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/infiot.png
 name: Infiot
-description: Infiot is a company surfaced as a portfolio company of lightspeed-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Infiot was a secure access service edge (SASE) and intelligent edge networking startup that combined
+  SD-WAN, zero trust network access (ZTNA), security service edge, and cloud-delivered edge intelligence
+  into a single-vendor, AI-driven service for connecting branch, remote, and IoT sites. Backed by
+  Lightspeed Venture Partners, the company was acquired by Netskope in August 2022 and its technology was
+  folded into Netskope's Borderless SD-WAN and Converged Access product line. Infiot no longer operates an
+  independent brand, developer portal, API reference, or public API host; the former infiot.com domain now
+  301-redirects to Netskope's Converged Access product page, so there is no standalone API surface to
+  enrich. This profile is retained in the API Evangelist network as a Lightspeed portfolio lead with its
+  acquisition status recorded.
 url: https://raw.githubusercontent.com/api-evangelist/infiot/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +29,30 @@ x-backed-by:
 - lightspeed-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: netskope
+x-acquired-date: '2022-08'
+x-successor-product: https://www.netskope.com/products/converged-access
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- SASE
+- Networking
+- SD-WAN
+- Zero Trust
+- Security Service Edge
+- Edge Computing
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
